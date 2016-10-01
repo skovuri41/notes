@@ -1,6 +1,3 @@
-
-
-
 * Links
 
 [[https://phuonguzi.wordpress.com/2015/05/05/diy-multi-purpose-htpc-with-raspberry-pi-and-osmc-part-3-installation/][Osmc Installation by phuonguzi]]

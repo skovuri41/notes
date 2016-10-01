@@ -1,0 +1,142 @@
+* Postgresql
+
+[[http://blog.dahanne.net/2015/01/19/stop-installing-postgres-on-your-laptop-use-docker-instead/][Stop installing postgres on your laptop : use Docker instead | Anthony
+Dahann...]]
+
+#+BEGIN_SRC sh
+
+$ docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=password -d postgres
+$ docker ps -a
+$ docker kill postgres
+$ docker start  postgres
+
+#+END_SRC
+
+-p 5432:5432 : means that we port forward the container (effectively running the db) 5432 port to the host (in my case, running boot2docker, the VirtualBox vm named boot2docker-vm) 5432 port – since the postgres image EXPOSE the port 5432 for its service, we will be able to connect to the db using this port
+–name : the name of your container – you can see all your containers
+and their names using the command
+-e : sets an environment variable (in our case the postgres user password will be « password )
+-d : runs the container in detached mode
+postgres : the name of the image (by default the latest version)
+
+* Commands
+docker create creates a container but does not start it.
+docker rename allows the container to be renamed.
+docker run creates and starts a container in one operation.
+docker rm deletes a container.
+docker update updates a container's resource limits.
+
+docker start starts a container so it is running.
+docker stop stops a running container.
+docker restart stops and starts a container.
+docker pause pauses a running container, "freezing" it in place.
+docker unpause will unpause a running container.
+docker wait blocks until running container stops.
+docker kill sends a SIGKILL to a running container.
+docker attach will connect to a running container.
+
+docker ps shows running containers.
+docker logs gets logs from container. (You can use a custom log driver, but logs is only available for json-file and journald in 1.10)
+docker inspect looks at all the info on a container (including IP address).
+docker events gets events from container.
+docker port shows public facing port of container.
+docker top shows running processes in container.
+docker stats shows containers' resource usage statistics.
+docker diff shows changed files in the container's FS.
+
+docker cp copies files or folders between a container and the local filesystem..
+docker export turns container filesystem into tarball archive stream to STDOUT.
+docker exec to execute a command in container.
+To enter a running container, attach a new shell process to a running
+container called foo, use: docker exec -it foo /bin/bash
+
+Images are just templates for docker containers.
+
+docker images shows all images.
+docker import creates an image from a tarball.
+docker build creates image from Dockerfile.
+docker commit creates image from a container, pausing it temporarily if it is running.
+docker rmi removes an image.
+docker load loads an image from a tar archive as STDIN, including images and tags (as of 0.7).
+docker save saves an image to a tar archive stream to STDOUT with all parent layers, tags & versions (as of 0.7).
+
+docker network create
+docker network rm
+docker network ls
+docker network inspect
+docker network connect
+docker network disconnect
+
+docker login to login to a registry.
+docker logout to logout from a registry.
+docker search searches registry for image.
+docker pull pulls an image from registry to local machine.
+docker push pushes an image to the registry from local machine.
+
+Instructions
+.dockerignore
+FROM Sets the Base Image for subsequent instructions.
+MAINTAINER Set the Author field of the generated images..
+RUN execute any commands in a new layer on top of the current image and commit the results.
+CMD provide defaults for an executing container.
+EXPOSE informs Docker that the container listens on the specified network ports at runtime. NOTE: does not actually make ports accessible.
+ENV sets environment variable.
+ADD copies new files, directories or remote file to container. Invalidates caches. Avoid ADD and use COPY instead.
+COPY copies new files or directories to container.
+ENTRYPOINT configures a container that will run as an executable.
+VOLUME creates a mount point for externally mounted volumes or other containers.
+USER sets the user name for following RUN / CMD / ENTRYPOINT commands.
+WORKDIR sets the working directory.
+ARG defines a build-time variable.
+ONBUILD adds a trigger instruction when the image is used as the base for another build.
+STOPSIGNAL sets the system call signal that will be sent to the container to exit.
+LABEL apply key/value metadata to your images, containers, or daemons.
+
+Get port mapping
+docker inspect -f '{{range $p, $conf := .NetworkSettings.Ports}} {{$p}} -> {{(index $conf 0).HostPort}} {{end}}' <containername>
+
+Find containers by regular expression
+for i in $(docker ps -a | grep "REGEXP_PATTERN" | cut -f1 -d" "); do echo $i; done
+
+Get Environment Settings
+docker run --rm ubuntu env
+
+Kill running containers
+docker kill $(docker ps -q)
+
+Delete old containers
+docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+
+Delete stopped containers
+docker rm -v $(docker ps -a -q -f status=exited)
+
+Delete dangling images
+docker rmi $(docker images -q -f dangling=true)
+
+Delete all images
+docker rmi $(docker images -q)
+
+Delete dangling volumes
+As of Docker 1.9:
+docker volume rm $(docker volume ls -q -f dangling=true)
+In 1.9.0, the filter dangling=false does not work - it is ignored and will list all volumes.
+
+Show image dependencies
+docker images -viz | dot -Tpng -o docker.png
+
+To check the CPU, memory, and network i/o usage of a single container, you can use:
+docker stats <container>
+
+For all containers listed by id:
+docker stats $(docker ps -q)
+
+For all containers listed by name:
+docker stats $(docker ps --format '{{.Names}}')
+
+For all containers listed by image:
+docker ps -a -f ancestor=ubuntu
+
+* Links
+[[https://github.com/wsargent/docker-cheat-sheet][GitHub - wsargent/docker-cheat-sheet: Docker Cheat Sheet]]
+
+

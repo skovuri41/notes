@@ -338,18 +338,3 @@ JMX_PORT=10101 ./bin/kafka-server-start.sh config/server.properties
 From the Kafka folder, run the following command: $
 bin/kafka-run-class.sh kafka.tools.JmxTool --jmx-url
 service:jmx:rmi:///jndi/rmi://127.0.0.1:9999/jmxrmiwa
-* test
-** hello1
-1. one
-2. two
-** hl
-** helo2
-** helo3
-** hello4
-** hello5
-** hello5
-** hello6
-* insert
-👪j
-🐱  😉 😏
-:woman
