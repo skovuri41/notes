@@ -14,3 +14,8 @@
 
 [[http://www.itpro.co.uk/mobile/21862/raspberry-pi-top-15-projects-to-try-yourself][Raspberry pi making a digital frame]]
 
+[[http://lightshowpi.org/getting-started/][Getting Started | LightShow Pi]]
+[[http://techstory.in/raspberry-pi/][Light Effects For the Festival Season Using Raspberry Pi !]]
+
+
+

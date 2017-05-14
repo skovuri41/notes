@@ -1,0 +1,39 @@
+* Installation
+#+BEGIN_SRC sh
+$ npm config get prefix
+$ cd && mkdir .node_modules_global
+$ npm config set prefix=$HOME/.node_modules_global
+$ npm config get prefix
+$ cat .npmrc
+$ npm install npm --global
+export PATH="$HOME/.node_modules_global/bin:$PATH"
+$ which npm
+$ npm install uglify-js --global
+$ npm list --global
+$ mkdir ~/project && cd ~/project
+$ npm install underscore
+/home/sitepoint/project
+└── underscore@1.8.3
+$ ls
+node_modules
+$ ls node_modules
+underscore
+$ npm list
+$ npm uninstall underscore
+- underscore@1.8.3 node_modules/underscore
+$ npm list
+/home/sitepoint/project
+└── (empty)
+$ npm install underscore@1.8.2
+$ npm update underscore
+$ npm search mkdir
+$ ls ~/.npm
+_locks  minimist  mkdirp  registry.npmjs.org  underscore
+$ npm cache clean
+$ npm init
+#+END_SRC
+
+
+* Links
+[[http://blog.teamtreehouse.com/install-node-js-npm-mac][How to Install Node.js and NPM on a Mac]]
+[[https://www.sitepoint.com/beginners-guide-node-package-manager/][A Beginner's Guide to npm — the Node Package Manager]]

@@ -118,6 +118,10 @@ There are seven different primary abstractions in which Clojure’s data structu
 *** clojurescript
 *** figwheel
 *** metricsgraphics.js
+*** perseverence
+*** greogor
+
+
 
 * reference frameworks
 *** mx-radio

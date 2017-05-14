@@ -500,3 +500,12 @@ for reference.
  
 * Emacs on Cygwin Crashes frequently
 run' rebaseall -v ' command from /cygwin/ash window
+* shell command on region
+https://www.masteringemacs.org/article/executing-shell-commands-emacs
+[[https://github.com/sambatriste/my-emacs.d/blob/bb922432fc492bbd90b1bd561889479a52161eb2/conf/93_sql.el][my-emacs.d/93_sql.el at bb922432fc492bbd90b1bd561889479a52161eb2 · sambatrist...]]
+https://github.com/sambatriste/sql-formatter/blob/master/src/main/java/com/github/sambatriste/SqlFormatter.java
+http://www.tsbakker.nl/jenkins.html#
+http://www.tothenew.com/blog/jenkins-api-integration-trigger-job-remotely/
+
+
+

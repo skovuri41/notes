@@ -1,4 +1,4 @@
-#+BEGIN_SRC elisp :results silent
+#+BEGIN_SRC elisp :results silent^
 (require 'cider-browse-ns)
 (require 'cider-classpath)
 (require 'cider-client)
