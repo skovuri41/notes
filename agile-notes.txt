@@ -1,0 +1,42 @@
+* Agile Manifesto
+
+We are uncovering better ways of developing software by doing it and
+helping others do it. Through this work we have come to value:
+
+*** Individuals and interactions over processes and tools
+*** Working software over comprehensive documentation
+*** Customer collaboration over contract negotiation
+*** Responding to change over following a plan
+
+* Individuals and Interactions
+Software Developers are actually passionate about tools and to a
+certain extent do love the processes as well. Tools and Process can
+get in the way of people and relationships.
+
+Choose tools and processes that help improve the individual effectiveness and
+facilitate collaboration and communication.
+Examples:
+** Git Source Control System facilitates collaboration and makes switching between tasks very fast and cheap.
+** Facilatate Office Workspaces to allow team to work together easily on the same problem.
+** Pair programming, daily standup meetings.
+** Retrospective sessions to talk about what went well and what could be improved (with people at the core of the topics)
+
+* Working Software
+The second principle of the Agile Manifesto is to value working
+software over comprehensive documentation.
+** Regular deployment to staging environment
+** Test Driven Development and Behavior Driven Development
+** Continous Integration
+** Code Review
+** Shorter Development Iteration with Feedbacks from project sponsor, users.
+** Documentation that helps future programmers, support teams to understand how to fix, maintain and extend the software.
+
+
+* Customer Collaboration
+The third principle of the Agile Manifesto, valuing "customer collaboration over contract negotiation"
+** Shorter Iteration Cycles so that working software can be delivered very frequently.
+** Enabling teams to work together as partners.
+** Retrospective sessions to help teams to keep improving.
+** Risk Assessment meetings to discover, communicate , track and address risks.
+
+* Responding to Change
