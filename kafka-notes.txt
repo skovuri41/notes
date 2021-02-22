@@ -1,3 +1,4 @@
+#+roam_tags: kafka
 * Kafka Reliability Guarantees
 Acks=all
 Block.on.buffer.full=true
@@ -338,3 +339,5 @@ JMX_PORT=10101 ./bin/kafka-server-start.sh config/server.properties
 From the Kafka folder, run the following command: $
 bin/kafka-run-class.sh kafka.tools.JmxTool --jmx-url
 service:jmx:rmi:///jndi/rmi://127.0.0.1:9999/jmxrmiwa
+* Docker containers
+[[file:docker-notes.txt][docker notes]]

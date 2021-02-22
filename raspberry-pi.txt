@@ -1,19 +1,11 @@
 * Links
 
 [[https://phuonguzi.wordpress.com/2015/05/05/diy-multi-purpose-htpc-with-raspberry-pi-and-osmc-part-3-installation/][Osmc Installation by phuonguzi]]
-
 [[https://osmc.tv/][osmc.tv]]
-
 [[https://www.raspberrypi.org/learning/robo-butler/bluetooth-setup/][raspberry pi bluetooth adapter]]
-
 [[https://www.raspberrypi.org/learning/robo-butler/bluetooth-setup/][python script to manage playlists via json api]]
-
-
 [[https://github.com/jcsaaddupuy/python-xbmc][python xbmc]]
-
-
 [[http://www.itpro.co.uk/mobile/21862/raspberry-pi-top-15-projects-to-try-yourself][Raspberry pi making a digital frame]]
-
 [[http://lightshowpi.org/getting-started/][Getting Started | LightShow Pi]]
 [[http://techstory.in/raspberry-pi/][Light Effects For the Festival Season Using Raspberry Pi !]]
 

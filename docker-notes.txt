@@ -1,3 +1,6 @@
+#+title: Docker notes
+#+roam_alias: "docker" "docker notes"
+#+roam_tags: docker
 * Postgresql
 
 [[http://blog.dahanne.net/2015/01/19/stop-installing-postgres-on-your-laptop-use-docker-instead/][Stop installing postgres on your laptop : use Docker instead | Anthony
@@ -135,7 +138,12 @@ docker stats $(docker ps --format '{{.Names}}')
 For all containers listed by image:
 docker ps -a -f ancestor=ubuntu
 
+Get IP address of the container
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
+docker inspect CONTAINER_ID | grep -i "IPaDDreSS"
+
 * Links
 [[https://github.com/wsargent/docker-cheat-sheet][GitHub - wsargent/docker-cheat-sheet: Docker Cheat Sheet]]
+* 
 
 
