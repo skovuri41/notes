@@ -64,29 +64,6 @@ There are seven different primary abstractions in which Clojure’s data structu
 - Macros
 - Multimethods
 
-* Clojure DSL Programming
-* Java Interop
-* Performance
-  - Type Hints
-  - Memoization
-  - Transients
-  - Chunked Sequences
-  - Coercion
-  - 
-* Applied Clojure
-*** Clojure Data Analysis
-*** Scaling through Messaging
-*** Data Storage with Clojure
-*** Clojure and the web
-* Unit Testing
-* Clojure Cookbook Recipes
-*** General Computing
-*** Local I/O
-*** Network I/O
-*** Databases
-*** Distributed Computation
-*** Performance and Production
-*** Web Applications
 * Clojure Libraries
 *** component
 *** clj-time
@@ -95,6 +72,29 @@ There are seven different primary abstractions in which Clojure’s data structu
 *** cheshire
 *** ring, compojure, liberator, hiccup
 *** incanter
+* Clojure DSL Programming
+* Applied Clojure
+*** Clojure Data Analysis
+*** Scaling through Messaging
+*** Data Storage with Clojure
+*** Clojure and the web
+* Clojure Cookbook Recipes
+*** General Computing
+*** Local I/O
+*** Network I/O
+*** Databases
+*** Distributed Computation
+*** Performance and Production
+*** Web Applications
+* Java Interop
+* Performance
+  - Type Hints
+  - Memoization
+  - Transients
+  - Chunked Sequences
+  - Coercion
+  - UUUUUURRRBQ
+* Unit Testing
 * Links
 [[http://spin.atomicobject.com/2015/05/11/clojure-logging/][Clojure Logging - logback]]
 [[http://rundis.github.io/blog/2015/clojure_dates.html][Clojure Protocol Extending Oracle Date ad Times]]

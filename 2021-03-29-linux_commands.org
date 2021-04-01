@@ -1,0 +1,13 @@
+:PROPERTIES:
+:CUSTOM_ID: h:7af03a8b-e561-4f3f-8cd7-2ab6c8f2b331
+:END:
+#+title: linux commands
+#+ROAM_TAGS: linux commands
+#+created: [2021-03-29 Mon]
+#+last_modified: [2021-03-29 Mon 00:42]
+
+1. Remove empty directories
+
+   #+begin_src bash
+     find top_directory -type d -exec rmdir {} ; 2>/dev/null
+   #+end_src

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:CUSTOM_ID: h:4711a922-26a3-4ff2-8c3d-cfad8aa8d247
+:END:
+#+title: devops ssh util
+#+ROAM_TAGS: devops clojure
+#+created: [2021-03-03 Wed]
+#+last_modified: [2021-03-03 Wed 12:42]
+
+
+[[https://github.com/suryaaditya/devops-util][GitHub - suryaaditya/devops-util: devops util]]
+
+Small devops util built using [[file:clojure-notes.txt][Clojure]]

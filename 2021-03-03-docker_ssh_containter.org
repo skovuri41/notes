@@ -1,0 +1,17 @@
+:PROPERTIES:
+:CUSTOM_ID: h:f8bfa32f-2e44-4cff-97ae-f85c7adcaefe
+:END:
+#+title: docker ssh containter
+#+ROAM_TAGS: docker
+#+created: [2021-03-03 Wed]
+#+last_modified: [2021-03-03 Wed 11:26]
+
+
+ghcr.io/s1ntaxe770r/image
+https://github.com/s1ntaxe770r/SSH-dockerfile
+
+username/password
+test/test
+
+docker run -p 2200:22 ghcr.io/s1ntaxe770r/image
+[[file:docker-notes.txt][Docker notes]]

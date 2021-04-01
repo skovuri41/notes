@@ -340,4 +340,4 @@ From the Kafka folder, run the following command: $
 bin/kafka-run-class.sh kafka.tools.JmxTool --jmx-url
 service:jmx:rmi:///jndi/rmi://127.0.0.1:9999/jmxrmiwa
 * Docker containers
-[[file:docker-notes.txt][docker notes]]
+[[file:docker-notes.txt][Docker notes]]

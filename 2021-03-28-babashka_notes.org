@@ -1,0 +1,12 @@
+:PROPERTIES:
+:CUSTOM_ID: h:6d14d9e0-e838-414b-920e-f2d023877c90
+:END:
+#+title: babashka notes
+#+ROAM_TAGS: babashka clojure
+#+created: [2021-03-28 Sun]
+#+last_modified: [2021-03-28 Sun 22:33]
+[[file:2021-03-25-photo_dedup_and_organizer.org][photo dedup and organizer]]
+
+[[https://github.com/borkdude/antq/blob/bb.edn/script/tasks.clj][antq/tasks.clj at bb.edn · borkdude/antq · GitHub]]
+
+[[https://github.com/babashka/fs][GitHub - babashka/fs: File system utility library]]

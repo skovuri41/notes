@@ -1,0 +1,33 @@
+:PROPERTIES:
+:CUSTOM_ID: h:1e7a1010-30ad-49ce-ae4e-f692d6905367
+:END:
+#+title: digital assets management
+#+ROAM_TAGS: photo organizer
+#+created: [2021-03-27 Sat]
+#+last_modified: [2021-03-27 Sat 23:31]
+[[file:2021-03-25-photo_dedup_and_organizer.org][photo dedup and organizer]]
+
+[[https://github.com/alchemy-fr/Phraseanet][GitHub - alchemy-fr/Phraseanet: Digital Asset Management PHP app]]
+
+Features:
+a. Uploading documents
+b. Managing Digital assets
+c. Uses the elastic search engine to search documents
+d. Filtering the results for the searched digital content
+e. Detailed view of the asset- description and modification history
+f. Make a web-gallery to organize content
+g. Export content- download locally or send a link to others for download
+h. Publish: send the selected content to a list of users, send to social networks
+i. Create databases
+j. Define the structure of the database
+k. Manage access and user rights
+l. Organization of files
+m. Enhanced search options
+
+* Notes
+a. Detect faces on the photos using MTCNN (Tensorflow)
+b. If GPS information is present in the Exif Data it will do a reverse geo location look to resolve the address
+
+
+* Reference
+[[https://github.com/hulk66/timeline][GitHub - hulk66/timeline: Timeline - A photo organizer]]

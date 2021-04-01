@@ -1,0 +1,68 @@
+:PROPERTIES:
+:CUSTOM_ID: h:5f8f65ba-c130-4fdb-80c7-b2e709adbcec
+:END:
+#+title: ffmpeg notes
+#+ROAM_TAGS: ffmpeg
+#+created: [2021-03-05 Fri]
+#+last_modified: [2021-03-05 Fri 19:05]
+
+NASA's Perseverance rover uses ffmpeg.
+
+[[http:][Mars Rover Perseverence FFmpeg]]
+
+[[https://ostechnix.com/20-ffmpeg-commands-beginners/][20+ FFmpeg Commands For Beginners - OSTechNix]]
+
+[[https://ottverse.com/crossfade-between-videos-ffmpeg-xfade-filter/][CrossFade, Dissolve, and other Effects using FFmpeg's xfade Filter -
+OTTVerse]]
+
+* trim
+
+#+begin_src sh
+  ffmpeg -i input.mp4 -ss 01:19:27 -to 02:18:51 -c:v copy -c:a copy output.mp4
+  # This will cut out the section from about 1h19min (after the -ss
+  # command) to 2h18min (after the -to command). The copy parts of the
+  # command are meant to copy both the original audio and video content
+  # without recompressing. This means that the above command only takes a
+  # few seconds to run.
+
+  ffmpeg -i input.mp4 -ss 00:01:10 -t 00:01:05 -c:v copy -c:a copy output.mp4
+
+  # This will extract 1min5sec (using the -t flag) starting from
+  # 1min10sec (the -ss flag) in the file. Happy trimming!
+
+#+end_src
+
+* join
+
+#+begin_src sh
+  cat fileList.txt
+  file '/home/file1.mp4'
+  file '/home/file1.mp4'
+
+  ffmpeg -f concat -safe 0 -i fileList.txt -c copy mergedVideo.mp4
+#+end_src
+
+* convert containers
+#+begin_src sh
+  ffmpeg -i infile.mov -acodec copy -vcodec copy outfile.mp4
+#+end_src
+
+* add text
+
+#+begin_src sh
+ffmpeg -i inputClip.mp4 -vf "drawtext=text='©Krishna':x=(1100-text_w):y=(600-text_h):fontsize=32:fontcolor=black:box=1:boxcolor=white@0.5:boxborderw=5" -c:a copy output.mp4
+# box : this is either 1 (enabled) or 0 (disabled)
+# boxcolor: white@0.5 implies a white colored box with a 50% opacity.
+# boxborderw is the width of the box’s border and the border color is taken from boxcolor.
+
+# Display Movie Credits using FFmpeg’s drawtext filter
+ffmpeg -i inputClip.mp4 -vf "drawtext=textfile=credits.txt:x=200: y=h-80*t: fontsize=36:fontcolor=yellow@0.9: box=1:boxcolor=black@0.6" -c:a copy outputCredits.mp4
+# specify the speed of scrolling using the y text position. Here, you
+# can provide an equation instead of a constant number. You start off
+# by telling by FFmpeg that the y-position is h - 80*t so that
+# everytime the value of time increases, the value of h - 80*t*
+# decreases, and the text is displayed higher. Tip:
+# change 80 to 100 or 120 and see the effect on the scrolling
+# speed.
+
+#+end_src

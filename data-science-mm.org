@@ -12,6 +12,8 @@
 *** Lambda Architecture
 
 * Tools
+[[file:docker-notes.txt][Docker notes]]
+[[file:kafka-notes.txt][Kafka Reliability Guarantees]]
 * Data Visualization
 
 * Statistics
@@ -291,5 +293,4 @@
     The scalability tests showed that Cassandra scales out linearly by adding more computing resources. 
     It performed 46,000 ops/sec on three nodes, up to 56,000 ops/sec on four nodes, up to 61,000 
     ops/sec on five nodes, and up to 71,000 ops/sec on six nodes.
-    
-    
+* t

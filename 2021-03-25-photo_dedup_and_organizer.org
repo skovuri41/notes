@@ -1,0 +1,66 @@
+:PROPERTIES:
+:CUSTOM_ID: h:af5646a2-b858-4b0a-900d-2ae77b1de1c2
+:END:
+#+title: photo dedup and organizer
+#+ROAM_TAGS: photos dedup babashka
+#+created: [2021-03-25 Thu]
+#+last_modified: [2021-03-25 Thu 16:53]
+
+
+De-Duping and Organizing Photos collection.
+Reference:
+[[https://gist.github.com/malcolmsparks/61418b6bbcd0962536add1ccb07033b5][A babashka script for sorting and de-duping a photo collection on
+Linux. · Gi...]]
+
+Uses:
+1. Blake
+2. Exiv2
+
+   [[https://exiv2.org/manpage.html][Exiv2 - Image metadata library and tools]]
+[[https://github.com/BLAKE3-team/BLAKE3#][   GitHub - BLAKE3-team/BLAKE3: the official Rust and C implementations of the B...]]
+
+Improve the script. Few more thoughts:
+1. Take Directory name as Input and recursively find the file types.
+2. Copy or Move
+3. What if metadata not found for the Picture. Seems many old pictures
+   do not have metadata embedded.
+4. Identify thumbnails folders and not process.
+5. Identify Transcoding folders and not process.
+6. Use Blake3 version
+7. Log the list of files processed, skipped and any other stats.
+
+* Runtime Options
+1. Dry Run
+2. Recursive
+3. Silent, Quiet Progress
+4. Copy or Move
+5. Folders and File Names Convention, Format
+6. Adjust date i.e consider pictures takes after midnight as taken on
+   same day.change time of day when the day "begins".
+7. De-duplication or save copy
+
+* Photo Tagging features
+1. Geo Tagging
+2. Reverse geo location lookup, using OpenStreetMap
+3. Face Recognition
+4. Batch Tagging
+5. Tagging Data stored in a Local Database
+6. “Fast Find” Complex Search Capability
+7. Organize by Keyword, Date, People & Location
+
+
+* Babashka fs
+ [[https://github.com/babashka/fs][GitHub - babashka/fs: File system utility library]]
+
+* Other Softwares
+[[https://exiftool.org][ExifTool by Phil Harvey]]
+
+* Reference Projects
+1.[[https://github.com/andrewning/sortphotos][GitHub - andrewning/sortphotos: SortPhotos is a Python script that
+organizes ...]]
+2.[[https://github.com/hulk66/timeline][GitHub - hulk66/timeline: Timeline - A photo organizer]]
+
+* Meta Data Standards
+** XMP
+** EXIF
+** IPTC

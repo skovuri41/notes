@@ -144,6 +144,3 @@ docker inspect CONTAINER_ID | grep -i "IPaDDreSS"
 
 * Links
 [[https://github.com/wsargent/docker-cheat-sheet][GitHub - wsargent/docker-cheat-sheet: Docker Cheat Sheet]]
-* 
-
-

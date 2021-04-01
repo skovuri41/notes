@@ -1,4 +1,4 @@
-lispy-mode-map
+* lispy-mode-map
 --------------
 
 key             binding
@@ -98,7 +98,6 @@ C-9             lispy-out-forward-newline
 <M-return>      lispy-meta-return
 <M-right>       lispy-outline-promote
 <backtab>       lispy-shifttab
-
 M-RET           lispy-meta-return
 M-,             pop-tag-mark
 M-.             lispy-goto-symbol

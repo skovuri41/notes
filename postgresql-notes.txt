@@ -2,7 +2,7 @@
 [[https://github.com/bitnami/bitnami-docker-postgresql][GitHub - bitnami/bitnami-docker-postgresql: Bitnami PostgreSQL DockerImage]]
 [[https://github.com/sameersbn/docker-postgresql][GitHub - sameersbn/docker-postgresql: Dockerfile to build a PostgreSQL
 contai...]]
-
+[[file:docker-notes.txt][Docker notes]]
 * Administration
 * Sql
 * Commands
